@@ -1,0 +1,25 @@
+import java.util.*;
+public class main{
+    public static void main(String[]args){
+        Scanner Sc=new Scanner(System.in);
+        int input;
+        do{
+            System.out.println("enter the marks(or 0 to stop)");
+            input=Sc.nextInt();
+            if(input==0){
+                break;
+            }
+            if(input>=90){
+            System.out.println("this is good");
+            }
+            else if(input>=60 && input<=89){
+            System.out.println("this also good");
+            }
+            else if(input>=0 && input<=59){
+            System.out.println("this is good as well");
+            }
+        }while(input!=0);
+        Sc.close();
+    }
+    
+}
